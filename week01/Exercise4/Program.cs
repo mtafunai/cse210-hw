@@ -42,14 +42,14 @@ class Program
         Console.WriteLine($"The average is: {average}");
         Console.WriteLine($"The largest number is: {max}");
 
-        int smallestpositive = int.MaxValue;
+        int smallestPositive = int.MaxValue;
         bool foundPositive = false;
 
         foreach(int number in numbers)
         {
-            if(number > 0 && number < smallestpositive)
+            if(number > 0 && number < smallestPositive)
             {
-                smallestpositive = number;
+                smallestPositive = number;
                 foundPositive = true;
             }
         }
