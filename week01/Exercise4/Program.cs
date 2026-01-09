@@ -56,7 +56,7 @@ class Program
 
         if(foundPositive)
         {
-            Console.WriteLine($"The smallest positive number is: {smallestpositive}");
+            Console.WriteLine($"The smallest positive number is: {smallestPositive}");
         }
         
         numbers.Sort();
