@@ -1,34 +1,20 @@
+
 using System;
-using System.Collections.Generic;
 
-class Program
+public class Resume
 {
-    static void Main(string[] args)
+    public string_Name;
+    public List<Job>_Jobs = new List<Job>();
+
+    public void Display{}
     {
-    
-        Job job1 = new Job();
-        job1._jobTitle = "Software Engineer";
-        job1._company = "Microsoft";
-        job1._startYear = 2019;
-        job1._endYear = 2022;
+        Console.WriteLine($"Name: {_Name}");
+        Console.WriteLine("Jobs:");
 
-        Job job2 = new Job();
-        job2._jobTitle = "Manager";
-        job2._company = "Apple";
-        job2._startYear = 2022;
-        job2._endYear = 2023;
-
-        
-        Resume myResume = new Resume();
-        myResume._name = "Mike Ross";
-
-        
-        myResume._jobs.Add(job1);
-        myResume._jobs.Add(job2);
-
-        
-        myResume.Display();
+        foreach (var job in _Jobs)
+        {
+            job.Display();
+        }
     }
 }
-
     
