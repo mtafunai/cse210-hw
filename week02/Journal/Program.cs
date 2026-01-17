@@ -18,7 +18,7 @@ class Program
             "What is something new you learned today?"
         };
 
-        boo1 running = true;
+        bool running = true;
 
         while (running)
         {
