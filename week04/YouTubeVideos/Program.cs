@@ -8,9 +8,9 @@ class Program
     {
         Console.WriteLine("Hello World! This is the YouTubeVideos Project.");
 
-        video video1 = new video("How to Program in C#", "Michael Tafunai", 600);
-        video video2 = new video("Top 10 programming tips", "Dev Guru", 480);
-        video video3 = new video("Understanding Algorithms", "Tec World", 720);
+        Video video1 = new Video("How to Program in C#", "Michael Tafunai", 600);
+        Video video2 = new Video("Top 10 programming tips", "Dev Guru", 480);
+        Video video3 = new Video("Understanding Algorithms", "Tec World", 720);
 
         video1.AddComment(new Comment("Michael", "Great video, very informative!"));
         video1.AddComment(new Comment("Dev Guru", "Thanks for the tips!"));
@@ -24,9 +24,9 @@ class Program
         video3.AddComment(new Comment("Tom", "Can you explain sorting algorithms next?"));
         video3.AddComment(new Comment("Emma", "Fantastic content, keep it up!"));
 
-        List<video> videos = new List<video> { video1, video2, video3 };
+        List<Video> videos = new List<Video> { video1, video2, video3 };
 
-        foreach (video video in videos)
+        foreach (Video video in videos)
         {
             Console.WriteLine($"Title: {video.Title}");
             Console.WriteLine($"Author: {video.Author}");
@@ -34,7 +34,7 @@ class Program
             Console.WriteLine($"Number of Comments: {video.GetNumberOfComments()}");
             Console.WriteLine("Comments:");
 
-            foreach (Comment comment in video.Comments ())
+            foreach (Comment comment in video.GetComments ())
             {
                 Console.WriteLine($"\t{comment.CommenterName}: {comment.CommentText}");
             }

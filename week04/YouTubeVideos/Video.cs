@@ -10,11 +10,11 @@ public class Video
 
     private List<Comment>_comments = new List<Comment>();
 
-    public video(string title, string author, int LengthInSeconds)
+    public Video(string title, string author, int lengthInSeconds)
     {
         Title = title;
         Author = author;
-        LengthInSeconds = LengthInSeconds;
+        LengthInSeconds = lengthInSeconds;
     }
 
     public void AddComment(Comment comment)
