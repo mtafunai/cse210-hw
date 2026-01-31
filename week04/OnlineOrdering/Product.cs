@@ -1,4 +1,4 @@
-public class product
+public class Product
 {
     private string _name;
     private string _productId;
@@ -14,11 +14,6 @@ public class product
     }
 
     public double GetTotalCost()
-    {
-        return _price * _quantity;
-    }
-
-    public string GetTotalCost()
     {
         return _price * _quantity;
     }
