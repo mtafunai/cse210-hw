@@ -15,7 +15,7 @@ public class Order
 
     public void AddProduct(Product product)
     {
-        -_products.Add(product);
+        _products.Add(product);
     }
 
     public double GetTotalPrice()
