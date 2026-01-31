@@ -21,7 +21,7 @@ class Program
         Console.WriteLine();
 
         Address address2 = new Address("45 King St", "Auckland", "AKL", "New Zealand");
-        customer customer2 = new customer("Mary Lee", address2);
+        Customer customer2 = new Customer("Mary Lee", address2);
 
         Order order2 = new Order(customer2);
         order2.AddProduct(new Product("Notebook", "N303", 5.99, 3));
