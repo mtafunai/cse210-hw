@@ -1,6 +1,5 @@
 
-using OnlineOrdering;
-using System;
+
 using System.Collections.Generic;
 
 public class Order
@@ -43,7 +42,7 @@ public class Order
     }
     public string GetShippingLabel()
     {
-        return $"Shipping Label:\n{_customer.GetName()}\n{_customer.GetAddress()}
+        return $"Shipping Label:\n{_customer.GetName()}\n{_customer.GetAddress()}";
     
     }
 }
