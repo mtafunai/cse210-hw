@@ -60,4 +60,11 @@ abstract class Activity
             Console.Write("\b \b");
         }
     }
+
+    protected void DisplayEndingMessage()
+    {
+        Console.WriteLine("\nGreat job!");
+        Console.WriteLine($"You have completed another {_duration} seconds of the {_name} Activity.");
+        ShowSpinner(3);
+    }
 }
