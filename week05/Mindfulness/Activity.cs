@@ -1,9 +1,5 @@
-using System
-
-
-using System.ComponentModel;
-using System.IO.Compression;
-using system.Threading;
+using System;
+using System.Threading;
 
 abstract class Activity
 {
@@ -11,10 +7,10 @@ abstract class Activity
     private string _description;
     protected int _duration;
 
-    protected Activity(string name, string _description)
+    protected Activity(string name, string description)
     {
         _name = name;
-        _description = _description;
+        _description = description;
 
     }
 
@@ -43,7 +39,7 @@ abstract class Activity
     protected void ShowSpinner(int seconds)
     {
         string[] spinner = { "|", "/", "-", "\\" };
-        DateTime endTime + DateTime.Now.AddSeconds(seconds);
+        DateTime endTime = DateTime.Now.AddSeconds(seconds);
         int i =  0;
 
         while (DateTime.Now < endTime)

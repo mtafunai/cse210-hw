@@ -13,18 +13,15 @@ class BreathingActivity : Activity
 
     protected override void PerformActivity()
     {
-        throw new NotImplementedException()
+        DateTime endTime = DateTime.Now.AddSeconds(_duration);
+
+        while (DateTime.Now < endTime)
         {
-            DateTime endTime = DateTime.Now.AddSeconds(_duration);
+            Console.Write("\nBreathe in ...");
+            ShowCountdown(4);
 
-            while (DateTime.Now < endTime)
-            {
-                Console.Write("\nBreathe in ...");
-                ShowCountdown(4);
-
-                Console.Write("\nBreathe out ...");
-                ShowCountdown(6);
-            }
+            Console.Write("\nBreathe out ...");
+            ShowCountdown(6);
         }
     }
 

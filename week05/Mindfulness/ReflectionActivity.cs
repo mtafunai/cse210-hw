@@ -34,9 +34,9 @@ class ReflectionActivity : Activity
         Console.WriteLine("\nWhen you have something in mind, press enter.");
         Console.ReadLine();
 
-        DateTime enndTime = DateTime.Now.AddSeconds(_duration);
+        DateTime endTime = DateTime.Now.AddSeconds(_duration);
 
-        while (DateTime. Now< endTime)
+        while (DateTime.Now < endTime)
         {
             string _question = _questions[rand.Next(_questions.Count)];
             Console.Write($"\n{_question} ");
