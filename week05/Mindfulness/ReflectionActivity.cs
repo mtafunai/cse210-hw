@@ -5,10 +5,10 @@ class ReflectionActivity : Activity
 {
     private List<string>_prompts = new()
     {
-        "Think of a time when you stood up fpr someone else.";
-        "Think of a time when you did something really difficult.";
-        "Think of a time when you helped someone in need."
-        "Thin of  a time when you did something truly selfless."
+        "Think of a time when you stood up fpr someone else.",
+        "Think of a time when you did something really difficult.",
+        "Think of a time when you helped someone in need.",
+        "Think of a time when you did something truly selfless."
     };
 
     private List<string>_questions = new()
