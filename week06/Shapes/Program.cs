@@ -1,7 +1,5 @@
 using System;
-using System.Drawing;
-using System.Reflection.Metadata;
-using System.Security.Cryptography;
+using System.Collections.Generic;
 
 class Program
 {
@@ -9,7 +7,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Shapes Project.");
 
-        List<Shape> shapes = new List<Shape>()
+        List<Shape> shapes = new List<Shape>();
         
         shapes.Add(new Square("Red", 4));
         shapes.Add(new Rectangle("Blue", 5 , 3));
