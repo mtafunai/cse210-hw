@@ -7,7 +7,7 @@ public class Circle: Shape
 
     public Circle(string color, double radius): base(color)
     {
-        _radius = _radius;
+        _radius = radius;
     }
 
     public override double GetArea()
