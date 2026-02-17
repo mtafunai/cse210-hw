@@ -4,11 +4,6 @@ using System.Dynamic;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World! This is the ExerciseTracking Project.");
-    }
-
     abstract class Activity
     {
         private DateTime _date;
